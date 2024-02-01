@@ -1,0 +1,27 @@
+experiment_name: 'solubility_prediction_T5_Embedding'
+
+num_epochs: 15
+batch_size: 72
+log_iterations: 100
+patience: 4
+optimizer_parameters:
+  lr: 1.0e-3
+
+target: sol
+unknown_solubility: False
+
+exp_name: T5_LSTM_CNN_Max_best
+# Paths to Data
+train_embeddings: '/root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/sol_0.25_clust_train_230923_emb/t5_embeddings/embeddings_file.h5'
+val_embeddings: '/root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/sol_0.25_clust_validation_230923_emb/t5_embeddings/embeddings_file.h5'
+test_embeddings: '/root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/repeat_nesg_test_embeddings.h5'
+train_remapping: '/root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/sol_0.25_clust_train_230923_emb/remapped_sequences_file.fasta'
+val_remapping: '/root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/sol_0.25_clust_validation_230923_emb/remapped_sequences_file.fasta'
+test_remapping: '/root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/repeat_nesg_test.fasta'
+
+# Model parameters
+model_type: 'biLSTM_TextCNN'
+model_parameters:
+  dropout: 0.2
+  kernel_size: 9
+  output_dim: 1

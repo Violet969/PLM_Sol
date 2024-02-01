@@ -1,0 +1,34 @@
+exp_name: T5_LSTM_CNN_Max_best
+balanced_loss: no
+batch_size: 72
+checkpoint:
+config: ./configs/SOL_light_attention_train.yaml
+embedding_mode: lm
+eval_on_test: yes
+experiment_name: solubility_prediction_T5_Embedding
+key_format: hash
+log_iterations: 100
+loss_function: SolCrossEntropy
+max_length: 6000
+min_train_acc: 0
+model_parameters:
+  dropout: 0.25
+  kernel_size: 9
+  output_dim: 1
+model_type: biLSTM_TextCNN
+n_draws: 200
+num_epochs: 10
+optimizer: Adam
+optimizer_parameters:
+  lr: 1.0e-03
+patience: 8
+seed: 123
+solubility_loss: 0
+target: sol
+# Paths to Data
+train_embeddings: /root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/train_embeddings.h5
+train_remapping: /root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/train_sequences_label.fasta
+val_embeddings: /root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/validation_embeddings.h5
+val_remapping: /root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/validation_sequences_label.fasta
+test_embeddings: /root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/test_embeddings.h5
+test_remapping: /root/PLM_Sol_ensemble/protTrans/Sol_emb_datasets/test_sequences_label.fasta

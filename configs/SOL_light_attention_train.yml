@@ -1,0 +1,27 @@
+experiment_name: 'solubility_prediction_T5_Embedding'
+
+num_epochs: 15
+batch_size: 120
+log_iterations: 100
+patience: 4
+optimizer_parameters:
+  lr: 1.0e-3
+
+target: sol
+unknown_solubility: False
+
+exp_name: Light_attention
+# Paths to Data
+train_embeddings: './embedding_dataset/Train_dataset_emb/t5_embeddings/embeddings_file.h5'
+val_embeddings: './embedding_dataset/Validation_dataset_emb/t5_embeddings/embeddings_file.h5'
+test_embeddings: './embedding_dataset/Test_dataset_emb/t5_embeddings/embeddings_file.h5'
+train_remapping: './embedding_dataset/Train_dataset_emb/remapped_sequences_file.fasta'
+val_remapping: './embedding_dataset/Validation_dataset_emb/remapped_sequences_file.fasta'
+test_remapping: './embedding_dataset/Test_dataset_emb/remapped_sequences_file.fasta'
+
+# Model parameters
+model_type: 'LightAttention'
+model_parameters:
+  dropout: 0.25
+  kernel_size: 9
+  output_dim: 1
