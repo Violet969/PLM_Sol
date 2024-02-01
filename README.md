@@ -8,7 +8,7 @@ Env
 =============
 protT5 environment https://github.com/HannesStark/protein-localization.
 ```
-# Pytorch==1.8.0 CUDA Version: 11.4 
+# Pytorch==2.0.1 CUDA Version: 11.4 
 conda env create -f env.yml
 pip install -r requirements.txt
 conda activate PLM_DBPPred
