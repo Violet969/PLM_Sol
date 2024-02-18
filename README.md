@@ -1,5 +1,5 @@
 # PLM_Sol
-
+Cite the code: [![DOI](https://zenodo.org/badge/743842028.svg)](https://zenodo.org/doi/10.5281/zenodo.10675340)
 What is PLM_Sol?
 =============
 A protein solubility prediction tool based on protT5.
