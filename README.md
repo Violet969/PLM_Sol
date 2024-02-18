@@ -3,7 +3,7 @@ Cite the code: [![DOI](https://zenodo.org/badge/743842028.svg)](https://zenodo.o
 
 What is PLM_Sol?
 =============
-A protein solubility prediction tool based on protT5.
+A protein solubility prediction tool based on protT5 and biLSTM_textCNN.
 
 Env
 =============
