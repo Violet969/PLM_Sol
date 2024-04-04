@@ -20,7 +20,7 @@ Using PLM_Sol
 
 Used the bio-embedding to generate the .h5 file
 ```
-bio_embeddings light_attention.yaml
+bio_embeddings embedding_protT5.yaml
 ```
 Training
 ```
