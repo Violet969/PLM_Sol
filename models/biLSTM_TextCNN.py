@@ -3,7 +3,7 @@ import torch.nn as nn
 
 
 class biLSTM_TextCNN(nn.Module):
-    def __init__(self, embeddings_dim=1024, output_dim=1, dropout=0.25, kernel_size = 9 ,conv_dropout: float = 0.25):
+    def __init__(self, embeddings_dim=1024, output_dim=1, dropout=0.25 ,conv_dropout: float = 0.25):
         super(biLSTM_TextCNN, self).__init__()
         
         hidden_size = 256 
@@ -19,7 +19,7 @@ class biLSTM_TextCNN(nn.Module):
         for c, k in zip(num_channels, kernel_sizes):
             self.convs.append(nn.Conv1d(embeddings_dim//2, c, k))
             
-        self.decoder = nn.Linear(sum(num_channels), 1)
+        self.decoder = nn.Linear(sum(num_channels), output_dim)
         self.softmax = nn.Sigmoid()
 
     def forward(self, x: torch.Tensor, mask, **kwargs) -> torch.Tensor:
