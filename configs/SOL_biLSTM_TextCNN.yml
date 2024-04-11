@@ -25,6 +25,5 @@ test_remapping: './embedding_dataset/Test_dataset_emb/remapped_sequences_file.fa
 # Model parameters
 model_type: 'biLSTM_TextCNN'
 model_parameters:
-  dropout: 0.2
-  kernel_size: 9
+  dropout: 0.25
   output_dim: 1
