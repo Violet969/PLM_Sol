@@ -24,10 +24,10 @@ bio_embeddings embedding_protT5.yaml
 ```
 Training
 ```
-python train.py --config ./configs/SOL_biLSTM_TextCNN.yaml
+python train.py --config ./configs/SOL_biLSTM_TextCNN.yml
 ```
 Predict
 ```
-python predict.py --config ./configs/inference-SOL-test-LSTM-CNN.yaml  
+python predict.py --config ./configs/inference-SOL-test-LSTM-CNN.yml  
 ```
 
