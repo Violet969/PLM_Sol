@@ -18,9 +18,9 @@ pip install -r requirements.txt
 Using PLM_Sol
 =============
 
-Used the bio-embedding to generate the .h5 file
+Used the bio-embedding to generate the .h5 file, need to change the file path of the .yml file
 ```
-bio_embeddings embedding_protT5.yaml
+bio_embeddings embedding_protT5.yml
 ```
 Training
 ```
