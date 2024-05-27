@@ -24,7 +24,7 @@ bio_embeddings embedding_protT5.yaml
 ```
 Training
 ```
-python train.py --config ./configs/SOL_biLSTM_TextCNN
+python train.py --config ./configs/SOL_biLSTM_TextCNN.yaml
 ```
 Predict
 ```
