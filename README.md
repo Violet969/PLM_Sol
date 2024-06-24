@@ -22,10 +22,11 @@ bio_embeddings light_attention.yaml
 ```
 Training
 ```
-python train.py --config ./configs/SOL_biLSTM_TextCNN
+python train.py --config ./configs/SOL_biLSTM_TextCNN.yml
 ```
 Predict
 ```
-python predict.py --config ./configs/inference-SOL-test-LSTM-CNN.yaml  
+python predict.py --config ./configs/inference_Sol_biLSTM_TextCNN.yml
+
 ```
 
