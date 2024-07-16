@@ -19,15 +19,17 @@ Using PLM_Sol
 Used the bio-embedding to generate the .h5 file
 ```
 cd embedding_datset
-#Change the 
-bio_embeddings light_attention_protT5.yml
+#Change the file path (sequences_file: ./Train_dataset.fasta prefix: ./Train_dataset_emb)
+bio_embeddings embedding_protT5.yml
 ```
 Training
 ```
+#Change the file path of .h5 and .fasta
 python train.py --config ./configs/SOL_biLSTM_TextCNN.yml
 ```
 Predict
 ```
+#Change the file path of .h5 and .fasta
 python inference.py --config ./configs/inference_Sol_biLSTM_TextCNN.yml
 
 ```
