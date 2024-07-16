@@ -18,6 +18,8 @@ Using PLM_Sol
 
 Used the bio-embedding to generate the .h5 file
 ```
+cd embedding_datset
+#Change the 
 bio_embeddings light_attention_protT5.yml
 ```
 Training
