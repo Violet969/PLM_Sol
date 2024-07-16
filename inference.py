@@ -66,7 +66,7 @@ if __name__ == '__main__':
         arg_dict = args.__dict__
         arg_dict['checkpoint'] = checkpoint
         # get the arguments from the yaml config file that is saved in the runs checkpoint
-        data = yaml.load(open(os.path.join(args.checkpoint[:-11]+'/train_arguments.yaml'), 'r'), Loader=yaml.FullLoader)
+        data = yaml.load(open(os.path.join('./model_param/train_arguments.yaml'), 'r'), Loader=yaml.FullLoader)
         for key, value in data.items():
             if key not in args.__dict__.keys():
                 if isinstance(value, list):
