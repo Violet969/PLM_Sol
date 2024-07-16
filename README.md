@@ -3,7 +3,7 @@
 What is PLM_Sol?
 =============
 A protein solubility prediction tool based on protT5.
-![image](
+![image](https://github.com/Violet969/PLM_Sol/blob/main/PLM_Sol_arch.png)
 
 Env
 =============
