@@ -26,7 +26,7 @@ python train.py --config ./configs/SOL_biLSTM_TextCNN.yml
 ```
 Predict
 ```
-python predict.py --config ./configs/inference_Sol_biLSTM_TextCNN.yml
+python inference.py --config ./configs/inference_Sol_biLSTM_TextCNN.yml
 
 ```
 
