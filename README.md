@@ -33,6 +33,5 @@ Predict
 ```
 #Change the file path of .h5 and .fasta
 python inference.py --config ./configs/inference_Sol_biLSTM_TextCNN.yml
-
 ```
-
+Then you can use the PLM_Sol_csv.ipynb to merge the orignal file and predicted csv file.
