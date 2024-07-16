@@ -1,7 +1,7 @@
 import copy
 
 from models import *  # For loading classes specified in config
-from models.legacy import *  # For loading classes specified in config
+# from models.legacy import *  # For loading classes specified in config
 from torch.optim import *  # For loading optimizer class that was used in the checkpoint
 import os
 import argparse
