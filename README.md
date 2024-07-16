@@ -13,6 +13,7 @@ protT5 environment https://github.com/HannesStark/protein-localization.
 conda env create -f env.yml
 conda activate PLM_Sol
 pip install -r requirements.txt
+pip install bio-embeddings[all]
 ```
 Using PLM_Sol
 =============
