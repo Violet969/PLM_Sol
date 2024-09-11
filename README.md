@@ -36,7 +36,7 @@ python inference.py --config ./configs/inference_Sol_biLSTM_TextCNN.yml
 ```
 Then you can use the PLM_Sol_csv.ipynb to merge the orignal file and predicted csv file.
 
-Citting PLM_Sol
+Citing PLM_Sol
 =============
 ```
 @article{zhang2024plm_sol,
