@@ -35,3 +35,18 @@ Predict
 python inference.py --config ./configs/inference_Sol_biLSTM_TextCNN.yml
 ```
 Then you can use the PLM_Sol_csv.ipynb to merge the orignal file and predicted csv file.
+
+Cite PLM_Sol
+=============
+```
+@article{zhang2024plm_sol,
+  title={PLM\_Sol: predicting protein solubility by benchmarking multiple protein language models with the updated Escherichia coli protein solubility dataset},
+  author={Zhang, Xuechun and Hu, Xiaoxuan and Zhang, Tongtong and Yang, Ling and Liu, Chunhong and Xu, Ning and Wang, Haoyi and Sun, Wen},
+  journal={Briefings in Bioinformatics},
+  volume={25},
+  number={5},
+  pages={bbae404},
+  year={2024},
+  publisher={Oxford University Press}
+}
+```
