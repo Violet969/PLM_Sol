@@ -11,6 +11,7 @@ from torchvision.transforms import transforms
 from datasets.embeddings_dataset import Embeddings_predict_Dataset
 from datasets.transforms import *
 from solver import Solver
+from models.biLSTM_TextCNN import Multi_CNN_MLP
 
 
 def inference(args):
